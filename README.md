@@ -31,13 +31,6 @@ $ go get -v github.com/kosim21/kosim-torrent
 ``` sh
 $ docker run -d -p 3000:3000 -v /path/to/my/downloads:/downloads kosim21/kosim-torrent
 ```
-
-**Heroku**
-
-Click this button to...
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
 ### Usage
 
 ```
