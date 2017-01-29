@@ -12,7 +12,7 @@ var VERSION = "0.0.0-src" //set with ldflags
 func main() {
 	s := server.Server{
 		Title:      "Click here to save on Ur Gdrive",
-		Port:       7000,
+		Port:       1000,
 		ConfigPath: "kzm.json",
 	}
 
