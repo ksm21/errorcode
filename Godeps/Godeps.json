@@ -233,7 +233,7 @@
 		},
 		{
 			"ImportPath": "golang.org/x/net/html",
-			"Rev": "4971afdc2f162e82d185353533d3cf16188a9f4e"
+			"Rev": "318395d8b12f5dd0f1b7cd0fbb95195f49acb0f9"
 		}
 	]
 }
