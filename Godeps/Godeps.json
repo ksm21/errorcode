@@ -234,6 +234,18 @@
 		{
 			"ImportPath": "golang.org/x/net/html",
 			"Rev": "318395d8b12f5dd0f1b7cd0fbb95195f49acb0f9"
-		}
+		},
+		{
+			"ImportPath": "golang.org/x/net/html/atom",
+			"Rev": "4971afdc2f162e82d185353533d3cf16188a9f4e"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "8f0908ab3b2457e2e15403d3697c9ef5cb4b57a9"
+		},
+		{
+			"ImportPath": "golang.org/x/time/rate",
+			"Rev": "711ca1cb87636abec28122ef3bc6a77269d433f3"
+                }
 	]
 }
