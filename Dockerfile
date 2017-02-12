@@ -9,7 +9,7 @@ ENV PATH $PATH:/usr/local/go/bin:$GOPATH/bin
 ENV PACKAGE github.com/ksm21/errorcode
 ENV PACKAGE_DIR $GOPATH/src/$PACKAGE
 
-#install go and godep, then compile kzm using godep, then wipe build tools
+#install go and godep, then compile errorcode using godep, then wipe build tools
 RUN apk update && \
     apk add git go gzip && \
     go get github.com/tools/godep && \
