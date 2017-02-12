@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/kosim21/kzm/server"
+	"github.com/ksm21/errorcode/server"
 	"github.com/jpillora/opts"
 )
 
@@ -12,8 +12,8 @@ var VERSION = "0.0.0-src" //set with ldflags
 func main() {
 	s := server.Server{
 		Title:      "Click here to save on Ur Gdrive",
-		Port:       1000,
-		ConfigPath: "kzm.json",
+		Port:       2000,
+		ConfigPath: "errorcode.json",
 	}
 
 	o := opts.New(&s)
