@@ -38,7 +38,7 @@ func (e *Engine) Configure(c Config) error {
 	}
 	tc := torrent.Config{
 		DataDir:           c.DownloadDirectory,
-		ListenAddr:        "0.0.0.0:" + strconv.Itoa(c.IncomingPort),
+		ListenAddr:        "127.0.0.1:" + strconv.Itoa(c.IncomingPort),
 		ConfigDir:         filepath.Join(c.DownloadDirectory, ".config"),
 		NoUpload:          !c.EnableUpload,
 		Seed:              c.EnableSeeding,
