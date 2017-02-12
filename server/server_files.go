@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const fileNumberLimit = 1000
+const fileNumberLimit = 100
 
 type fsNode struct {
 	Name     string
@@ -49,7 +49,7 @@ func (s *Server) serveFiles(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		switch r.Method {
-		case "GET":
+		case "POST":
 			f, err := os.Open(file)
 			if err != nil {
 				http.Error(w, "File open error: "+err.Error(), http.StatusBadRequest)
