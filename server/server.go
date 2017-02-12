@@ -104,8 +104,8 @@ func (s *Server) Run(version string) error {
 	//configure engine
 	c := engine.Config{
 		DownloadDirectory: "./downloads",
-		EnableUpload:      true,
-		
+		EnableUpload:      false,
+		EnableSeeding:     true
 		AutoStart:         true,
 	}
 	if _, err := os.Stat(s.ConfigPath); err == nil {
@@ -139,7 +139,7 @@ func (s *Server) Run(version string) error {
 
 	host := s.Host
 	if host == "" {
-		host = "0.0.0.0"
+		host = "127.0.0.1"
 	}
 	addr := fmt.Sprintf("%s:%d", host, s.Port)
 	proto := "http"
@@ -150,7 +150,7 @@ func (s *Server) Run(version string) error {
 
 	if s.Open {
 		openhost := host
-		if openhost == "0.0.0.0" {
+		if openhost == "127.0.0.1" {
 			openhost = "localhost"
 		}
 		go func() {
