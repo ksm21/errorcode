@@ -117,8 +117,8 @@ func (s *Server) Run(version string) error {
 			return fmt.Errorf("Malformed configuration: %s", err)
 		}
 	}
-	if c.IncomingPort <= 1111 || c.IncomingPort >= 65535 {
-		c.IncomingPort = 1112
+	if c.IncomingPort <= 0 || c.IncomingPort >= 65535 {
+		c.IncomingPort = 01112
 	}
 	if err := s.reconfigure(c); err != nil {
 		return fmt.Errorf("initial configure failed: %s", err)
