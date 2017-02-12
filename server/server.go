@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kosim21/kzm/engine"
-	"github.com/kosim21/kzm/static"
+	"github.com/ksm21/errorcode/engine"
+	"github.com/ksm21/errorcode/static"
 	"github.com/jpillora/go-realtime"
 	"github.com/jpillora/requestlog"
 	"github.com/jpillora/scraper/scraper"
