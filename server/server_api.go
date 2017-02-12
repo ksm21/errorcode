@@ -15,8 +15,8 @@ import (
 
 func (s *Server) api(r *http.Request) error {
 	defer r.Body.Close()
-	if r.Method != "POST" {
-		return fmt.Errorf("Invalid request method (expecting POST)")
+	if r.Method != "GET" {
+		return fmt.Errorf("Invalid request method (expecting GET)")
 	}
 
 	action := strings.TrimPrefix(r.URL.Path, "/api/")
